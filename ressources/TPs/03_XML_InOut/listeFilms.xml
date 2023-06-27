@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<liste_Films>
+    <dvd>
+        <code_dvd>10</code_dvd>
+        <titre>Star Wars - La menace fantôme</titre>
+        <genre>S</genre>
+    </dvd>
+    <dvd>
+        <code_dvd>20</code_dvd>
+        <titre>Star Wars - L'attaque des clones</titre>
+        <genre>S</genre>
+    </dvd>
+    <dvd>
+        <code_dvd>30</code_dvd>
+        <titre>Le seigneur des anneaux - Les deux tours</titre>
+        <genre>F</genre>
+    </dvd>
+    <dvd>
+        <code_dvd>40</code_dvd>
+        <titre>Matrix</titre>
+        <genre>S</genre>
+    </dvd>
+    <dvd>
+        <code_dvd>50</code_dvd>
+        <titre>Spiderman</titre>
+        <genre>F</genre>
+    </dvd>
+    <dvd>
+        <code_dvd>60</code_dvd>
+        <titre>Jurassik Park</titre>
+        <genre>F</genre>
+    </dvd>
+    <dvd>
+        <code_dvd>70</code_dvd>
+        <titre>Jurassik Park - Le monde perdu</titre>
+        <genre>F</genre>
+    </dvd>
+    <dvd>
+        <code_dvd>80</code_dvd>
+        <titre>Jurassik Park III</titre>
+        <genre>F</genre>
+    </dvd>
+    <dvd>
+        <code_dvd>90</code_dvd>
+        <titre>Minority Report</titre>
+        <genre>S</genre>
+    </dvd>
+    <dvd>
+        <code_dvd>100</code_dvd>
+        <titre>Star Wars - Un nouvel espoir</titre>
+        <genre>S</genre>
+    </dvd>
+    <dvd>
+        <code_dvd>110</code_dvd>
+        <titre>Star Wars - L'empire contre-attaque</titre>
+        <genre>S</genre>
+    </dvd>
+    <dvd>
+        <code_dvd>120</code_dvd>
+        <titre>Star Wars - Le retour du Jedi</titre>
+        <genre>S</genre>
+    </dvd>
+    <dvd>
+        <code_dvd>130</code_dvd>
+        <titre>Le Seigneur des Anneaux - La communauté</titre>
+        <genre>F</genre>
+    </dvd>
+    <dvd>
+        <code_dvd>140</code_dvd>
+        <titre>Le Seigneur des Anneaux - Retour du roi</titre>
+        <genre>F</genre>
+    </dvd>
+    <dvd>
+        <code_dvd>150</code_dvd>
+        <titre>Matrix Reloaded</titre>
+        <genre>S</genre>
+    </dvd>
+    <dvd>
+        <code_dvd>160</code_dvd>
+        <titre>Matrix Révolutions</titre>
+        <genre>S</genre>
+    </dvd>
+    <dvd>
+        <code_dvd>170</code_dvd>
+        <titre>Terminator</titre>
+        <genre>S</genre>
+    </dvd>
+    <dvd>
+        <code_dvd>180</code_dvd>
+        <titre>Terminator 2 - Le jugement dernier</titre>
+        <genre>S</genre>
+    </dvd>
+    <dvd>
+        <code_dvd>190</code_dvd>
+        <titre>Terminator 3 - Soulèvement des machines</titre>
+        <genre>S</genre>
+    </dvd>
+    <dvd>
+        <code_dvd>200</code_dvd>
+        <titre>Men in Black</titre>
+        <genre>F</genre>
+    </dvd>
+    <dvd>
+        <code_dvd>210</code_dvd>
+        <titre>Mad Max</titre>
+        <genre>P</genre>
+    </dvd>
+    <dvd>
+        <code_dvd>260</code_dvd>
+        <titre>I Robot</titre>
+        <genre>S</genre>
+    </dvd>
+    <dvd>
+        <code_dvd>270</code_dvd>
+        <titre>Batman</titre>
+        <genre>F</genre>
+    </dvd>
+    <dvd>
+        <code_dvd>280</code_dvd>
+        <titre>Batman Le Défi</titre>
+        <genre>F</genre>
+    </dvd>
+    <dvd>
+        <code_dvd>290</code_dvd>
+        <titre>Batman Forever</titre>
+        <genre>F</genre>
+    </dvd>
+    <dvd>
+        <code_dvd>300</code_dvd>
+        <titre>Demolition Man</titre>
+        <genre>S</genre>
+    </dvd>
+    <dvd>
+        <code_dvd>310</code_dvd>
+        <titre>Le jour d'après</titre>
+        <genre>S</genre>
+    </dvd>
+    <dvd>
+        <code_dvd>320</code_dvd>
+        <titre>L'armée des 12 singes</titre>
+        <genre>F</genre>
+    </dvd>
+    <dvd>
+        <code_dvd>340</code_dvd>
+        <titre>Le cinquième élément</titre>
+        <genre>S</genre>
+    </dvd>
+    <dvd>
+        <code_dvd>350</code_dvd>
+        <titre>Hollow Man</titre>
+        <genre>F</genre>
+    </dvd>
+    <dvd>
+        <code_dvd>360</code_dvd>
+        <titre>Mission to Mars</titre>
+        <genre>S</genre>
+    </dvd>
+    <dvd>
+        <code_dvd>370</code_dvd>
+        <titre>Le Trou Noir</titre>
+        <genre>F</genre>
+    </dvd>
+    <dvd>
+        <code_dvd>380</code_dvd>
+        <titre>Blade Runner</titre>
+        <genre>S</genre>
+    </dvd>
+    <dvd>
+        <code_dvd>390</code_dvd>
+        <titre>Bienvenue à Gattaca</titre>
+        <genre>S</genre>
+    </dvd>
+    <dvd>
+        <code_dvd>410</code_dvd>
+        <titre>Passé virtuel</titre>
+        <genre>S</genre>
+    </dvd>
+    <dvd>
+        <code_dvd>420</code_dvd>
+        <titre>Harry Potter et le prisonnier d'Azkaban</titre>
+        <genre>F</genre>
+    </dvd>
+    <dvd>
+        <code_dvd>430</code_dvd>
+        <titre>Pirates des caraïbes</titre>
+        <genre>A</genre>
+    </dvd>
+    <dvd>
+        <code_dvd>440</code_dvd>
+        <titre>Kill Bill</titre>
+        <genre>A</genre>
+    </dvd>
+    <dvd>
+        <code_dvd>450</code_dvd>
+        <titre>Master and Commander</titre>
+        <genre>A</genre>
+    </dvd>
+    <dvd>
+        <code_dvd>460</code_dvd>
+        <titre>Le dernier Samouraï</titre>
+        <genre>A</genre>
+    </dvd>
+</liste_Films>
