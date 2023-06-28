@@ -1,0 +1,252 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "title": "PRODUCTREST APIs",
+      "description": "APIs available for PRODUCTREST",
+      "version": "1.0.0"
+    },
+    "host": "power8:10014",
+    "schemes": [ "http" ],
+    "basePath": "/web/services/PRODUCTREST",
+    "tags": [
+      {
+        "name": "PRODUCTREST APIs",
+        "description": "APIs available for PRODUCTREST"
+      }
+    ],
+    "definitions": {
+      "PRODUCTEUR_Item": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nom": {
+            "type": "string",
+            "maxLength": 50
+          }
+        }
+      },
+      "PRODUCTEUR_Detail": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nom": {
+            "type": "string",
+            "maxLength": 50
+          },
+          "adresse": {
+            "type": "string",
+            "maxLength": 60
+          },
+          "codePostal": {
+            "type": "string",
+            "maxLength": 12
+          },
+          "commune": {
+            "type": "string",
+            "maxLength": 50
+          }
+        }
+      },
+      "PRODUCTEUR_CREATEResult": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "PRODUCTEUR_GETBYCODEResult": {
+        "type": "object",
+        "properties": {
+          "producteur": {
+            "$ref": "#/definitions/PRODUCTEUR_Detail"
+          }
+        }
+      },
+      "PRODUCTEUR_GETALLResult": {
+        "type": "object",
+        "properties": {
+          "producteurs_length": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "producteurs": {
+            "type": "array",
+            "maxItems": 1000,
+            "items": {
+              "$ref": "#/definitions/PRODUCTEUR_Item"
+            }
+          },
+          "httpHeaders": {
+            "type": "array",
+            "maxItems": 10,
+            "items": {
+              "type": "string",
+              "maxLength": 100
+            }
+          }
+        }
+      }
+    },
+    "paths": {
+      "/{code}": {
+        "delete": {
+          "tags": [
+            "PRODUCTREST APIs"
+          ],
+          "operationId": "PRODUCTEUR_DELETE",
+          "consumes": [
+            "*/*"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "code",
+              "in": "path",
+              "required": true,
+              "type": "integer",
+              "format": "int32"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Successful operation"
+            },
+            "500": {
+              "description": "Unexpected exception"
+            }
+          }
+        },
+        "get": {
+          "tags": [
+            "PRODUCTREST APIs"
+          ],
+          "operationId": "PRODUCTEUR_GETBYCODE",
+          "consumes": [
+            "*/*"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "code",
+              "in": "path",
+              "required": true,
+              "type": "integer",
+              "format": "int32"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Successful operation",
+              "schema": {
+                "$ref": "#/definitions/PRODUCTEUR_GETBYCODEResult"
+              }
+            },
+            "500": {
+              "description": "Unexpected exception"
+            }
+          }
+        }
+      },
+      "/": {
+        "get": {
+          "tags": [
+            "PRODUCTREST APIs"
+          ],
+          "operationId": "PRODUCTEUR_GETALL",
+          "consumes": [
+            "*/*"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "Successful operation",
+              "schema": {
+                "$ref": "#/definitions/PRODUCTEUR_GETALLResult"
+              }
+            },
+            "500": {
+              "description": "Unexpected exception"
+            }
+          }
+        },
+        "post": {
+          "tags": [
+            "PRODUCTREST APIs"
+          ],
+          "operationId": "PRODUCTEUR_CREATE",
+          "consumes": [
+            "application/json"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "body",
+              "in": "body",
+              "required": true,
+              "schema": {
+                "$ref": "#/definitions/PRODUCTEUR_Detail"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Successful operation",
+              "schema": {
+                "$ref": "#/definitions/PRODUCTEUR_CREATEResult"
+              }
+            },
+            "500": {
+              "description": "Unexpected exception"
+            }
+          }
+        },
+        "put": {
+          "tags": [
+            "PRODUCTREST APIs"
+          ],
+          "operationId": "PRODUCTEUR_UPDATE",
+          "consumes": [
+            "application/json"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "body",
+              "in": "body",
+              "required": true,
+              "schema": {
+                "$ref": "#/definitions/PRODUCTEUR_Detail"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Successful operation"
+            },
+            "500": {
+              "description": "Unexpected exception"
+            }
+          }
+        }
+      }
+    }
+  }
