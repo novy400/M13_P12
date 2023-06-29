@@ -1,0 +1,71 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "title": "LSTDVDRESTYV APIs",
+      "description": "APIs available for LSTDVDRESTYV",
+      "version": "1.0.0"
+    },
+    "host": "power8:10014",
+    "schemes": [ "http" ],
+    "basePath": "/web/services/LSTDVDRESTYV",
+    "tags": [
+      {
+        "name": "LSTDVDRESTYV APIs",
+        "description": "APIs available for LSTDVDRESTYV"
+      }
+    ],
+    "definitions": {
+      "DVD_Item": {
+        "type": "object",
+        "properties": {
+          "titre": {
+            "type": "string",
+            "maxLength": 40
+          },
+          "annee": {
+            "type": "number"
+          }
+        }
+      },
+      "LSTDVDResult": {
+        "type": "object",
+        "properties": {
+          "DVD_Liste": {
+            "type": "array",
+            "maxItems": 10,
+            "items": {
+              "$ref": "#/definitions/DVD_Item"
+            }
+          }
+        }
+      }
+    },
+    "paths": {
+      "/": {
+        "get": {
+          "tags": [
+            "LSTDVDRESTYV APIs"
+          ],
+          "operationId": "LSTDVD",
+          "consumes": [
+            "*/*"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "Successful operation",
+              "schema": {
+                "$ref": "#/definitions/LSTDVDResult"
+              }
+            },
+            "500": {
+              "description": "Unexpected exception"
+            }
+          }
+        }
+      }
+    }
+  }
